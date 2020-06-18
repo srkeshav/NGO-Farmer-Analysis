@@ -39,6 +39,12 @@ apps/ @octocat
 .github/*                           @krishnanvignesh
 
 src/                                @srkeshav @krishnanvignesh
+<<<<<<< HEAD
 
 *                                   @krishnanvignesh
 *.md                                @krishnanvignesh 
+=======
+*                                   @krishnanvignesh
+*.md                                @krishnanvignesh 
+public/                             @krishnanvignesh
+>>>>>>> 9fcab878c42e39d7f9aea03812561319384c44b8
