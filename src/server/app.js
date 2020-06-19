@@ -1,8 +1,13 @@
 const express = require('express');
+//importing Ejs
+const expressLayouts = require('express-ejs-layouts');
+
 const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
-
+//EJS
+app.use(expressLayouts);
+app.set('view engine', 'ejs');
 const route = require('./api/index');
 const auth = require('./api/auth');
 const test = require('./api/test');

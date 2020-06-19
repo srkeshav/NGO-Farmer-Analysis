@@ -1,7 +1,17 @@
 const express = require('express');
 const router = express.Router();
 const authService = require("../services/authService");
-
+const path = require('path');
+var pathLoginPage = path.basename('/views/loginPage.ejs');
+var pathSignUpPage = path.basename('/views/signUpPage.ejs');
+//getLoginPage
+router.get('/loginPage', (req,res) =>{
+    res.render(pathLoginPage);
+});
+//getSignUpPage
+router.get('/signUpPage', (req,res) =>{
+    res.render(pathSignUpPage);
+});
 router.post('/login', (req, res) => {
     // Implement authentication of user.
     // authService.login(req, res, ()=>{})
