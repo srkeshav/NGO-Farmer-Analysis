@@ -36,6 +36,7 @@ apps/ @octocat
 # directory in the root of your repository.
 /docs/ @doctocat
 
+<<<<<<< HEAD
 .github/*                           @krishnanvignesh
 
 src/                                @srkeshav @krishnanvignesh
@@ -44,7 +45,15 @@ src/                                @srkeshav @krishnanvignesh
 *                                   @krishnanvignesh
 *.md                                @krishnanvignesh 
 =======
+=======
+>>>>>>> upstream/master
 *                                   @krishnanvignesh
 *.md                                @krishnanvignesh 
+
+.github/*                           @krishnanvignesh
+src/                                @krishnanvignesh sharma.keshav39@gmail.com @shubh-07 @94151
 public/                             @krishnanvignesh
+<<<<<<< HEAD
 >>>>>>> 9fcab878c42e39d7f9aea03812561319384c44b8
+=======
+>>>>>>> upstream/master
