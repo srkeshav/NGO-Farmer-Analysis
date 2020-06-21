@@ -40,7 +40,11 @@ apps/ @octocat
 *.md                                @krishnanvignesh 
 
 .github/*                           @krishnanvignesh
+<<<<<<< HEAD
 
 src/                                @krishnanvignesh sharma.keshav39@gmail.com @shubh-07 @94151
 
+=======
+src/                                @krishnanvignesh sharma.keshav39@gmail.com @shubh-07 @94151
+>>>>>>> upstream/Development
 public/                             @krishnanvignesh
