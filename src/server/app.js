@@ -6,7 +6,9 @@ require('./utilities/createKnexPGConnection.js');
 const expressLayouts = require('express-ejs-layouts');
 
 const app = express();
-app.use(express.json())
+const logger=require('./utilities/logger');
+
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 
 //EJS
@@ -16,7 +18,8 @@ const route = require('./api/index');
 const auth = require('./api/auth');
 const farmer = require('./api/farmer');
 
-app.use(express.static('public'))
+app.use(require("morgan")("combined", { "stream": logger.stream }));
+app.use(express.static('public'));
 
 // Routes
 app.use('/', route);
