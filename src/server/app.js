@@ -1,4 +1,6 @@
 const express = require('express');
+//db
+require('./utilities/createKnexPGConnection.js');
 
 //importing Ejs
 const expressLayouts = require('express-ejs-layouts');
@@ -7,10 +9,6 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-
-const app = express();
-app.use(express.json())
-app.use(express.urlencoded({extended:true}))
 //EJS
 app.use(expressLayouts);
 app.set('view engine', 'ejs');

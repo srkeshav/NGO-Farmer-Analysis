@@ -1,4 +1,4 @@
-
+//dbconnection
 exports.signUp = (req, res, next) => {
     // take user details from UI and add it to database. (hash the password)
 }
